@@ -1,0 +1,39 @@
+<!--When a user chooses to create enter a new "score" into the music library,
+the form elements below will collect the data that will be displayed in the library-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Music Library Catalog</title>
+</head>
+<body>
+<h2>Enter Score Information</h2>
+    <form action="/scores" method="POST">
+    Title <input type="text" name="scoreTitle" style="margin: 5px" size="50"><br>
+    Composer <input type="text" name="scoreTitle" style="margin: 5px" size="50"><br>
+    Grade Level <select placeholder="Slt" style="margin: 5px">
+            <option value="select" disabled selected hidden>Select</option>
+            <option value="audi">Beginning</option>
+            <option value="vereasy">Very Easy</option>
+            <option value="easy">Easy</option>
+            <option value="med">Medium</option>
+            <option value="medadv">Medium Advanced</option>
+            <option value="advanced">Advanced</option>
+            <option value="one">I</option>
+            <option value="two">II</option>
+            <option value="three">III</option>
+            <option value="four">IV</option>
+            <option value="five">V</option>
+            <option value="six">VI</option>
+            <!--with option for input-->
+            <option value="other">Other</option>
+        </select><br>
+    Copyright Year <input type="text" name="scoreTitle" style="margin: 5px" size="15"><br>
+    Year Purchased <input type="text" name="scoreTitle" style="margin: 5px" size="15"><br>
+    Last Performed <input type="text" name="scoreTitle" style="margin: 5px" size="15"><br>
+    <p>Notes</p>
+    <textarea name="scoreTitle" rows="10" cols="50"></textarea><br>
+    <input type="submit" name="titleSubmit"style="margin: 5px">
+</form>
+
+</body>
+</html>
